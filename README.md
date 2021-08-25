@@ -8,12 +8,12 @@ pip官网：[pip官网](https://pypi.org/project/pip/#files)
 ## 配置chromedriver
 ### 打开chrome浏览器，地址栏输入[chrome版本](chrome://version/)，在第一行查看版本信息
 ### 下载对应chrome版本的chromedriver: 
-[chromedrvier下载]http://chromedriver.storage.googleapis.com/index.html
+[chromedrvier下载](http://chromedriver.storage.googleapis.com/index.html)
 ### 把chromedriver拷贝到chrome的安装文件夹下：
-[chromedriver配置教程]https://blog.csdn.net/qq_40604853/article/details/81388078
+[chromedriver配置教程](https://blog.csdn.net/qq_40604853/article/details/81388078)
 ## 修改程序中的参数
 ### 修改浏览器位置信息：在程序第12行
-# `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222`
+ `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222`
 把引号中的位置改成你的chrome位置，一般对着桌面的chrome右键属性，就可以查看安装位置，改成这个位置就可以了
 代码第41行，修改
 `driver_path = r' C:\Program Files (x86)\Google\Chrome\Application\chromedrdriver.exe ' `和刚才类似修改成你的chromedriver位置就可以了, chromedriver和chrome放在同一目录下
@@ -21,7 +21,7 @@ pip官网：[pip官网](https://pypi.org/project/pip/#files)
 我用的是163邮箱，如果没有的话可以注册一个，也不难
 代码119行：`mail_user = 'xxx' `，xxx改成你的163邮箱用户名
 代码121行：`mail_pass = 'ABC'` ，ABC改成163邮箱授权码
-[163邮箱授权码]https://jingyan.baidu.com/article/e6c8503c3e01f6a44f1a18c5.html
+[163邮箱授权码](https://jingyan.baidu.com/article/e6c8503c3e01f6a44f1a18c5.html)
 注意！！！授权码一定要记得保存，现在获取授权码好像要短信验证，而且只显示一次，记得要保存好（我们选的协议是SMTP，经验里给的是POP3，这个要注意勾选SMTP）
 代码122行：`sender = 'xxx@163.com'`  # 发送邮箱的地址 
 代码123行：`receivers = ['xxx@xx.com']`  # 接收邮箱的地址
