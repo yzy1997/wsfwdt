@@ -32,7 +32,7 @@ pip官网：[pip官网](https://pypi.org/project/pip/#files)
 填了名字可以发邮件通知你哦
 ## 6.运行程序
 说了这么多，赶紧看看效果吧:  
-(1) 首先关闭所有打开的chrome浏览器，否则可能运行不成功  
+(1) ***首先关闭所有打开的chrome浏览器，否则可能运行不成功***
 (2) 打开命令行（Win+R键，输入cmd，回车），把程序12行的代码（第5步修改过的代码）`"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222`   
 **注意！！！不要#键和前面的空格，回车，就可以打开chrome**  
 (3) 进入网上服务大厅，自己登陆一下：[网上服务大厅地址](https://eportal.uestc.edu.cn/new/index.html)  
