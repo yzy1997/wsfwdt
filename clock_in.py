@@ -94,6 +94,7 @@ def parse_page_login(driver, name):
     # send_user_pass(driver)
     # clear_brower_data(driver)
     # driver.refresh()
+    time.sleep(3)
     WebDriverWait(driver=driver, timeout=20).until(
         EC.presence_of_element_located((By.XPATH, "//div[@data-action='add']"))
     )
@@ -101,13 +102,13 @@ def parse_page_login(driver, name):
     health_btn = driver.find_element_by_xpath('//div[@data-action="add"]')
     actions.click(health_btn).perform()
     time.sleep(3)
-    if (isElementExist(driver, "//div[@data-action='save']")==False) and (isElementExist(driver, "/html/body/div[11]/div[1]/div[1]/div[2]/div[2]/a")==False):
+    if (isElementExist(driver, "/html/body/div[11]/div/div[2]/footer/div/div")==False) and (isElementExist(driver, "/html/body/div[11]/div[1]/div[1]/div[2]/div[2]/a")==False):
         print("error! 打卡失败!!!")
         send_email("error! %s打卡失败!!!" % name, "error! %s打卡失败!!!" % name)
         return
     try:
         actions = ActionChains(driver=driver)
-        save_btn = driver.find_element_by_xpath("//div[@data-action='save']")
+        save_btn = driver.find_element_by_xpath("/html/body/div[11]/div/div[2]/footer/div/div")
         driver.implicitly_wait(10)
         actions.move_to_element(save_btn).click(save_btn).perform()
         time.sleep(3)
