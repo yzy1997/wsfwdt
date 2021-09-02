@@ -1,4 +1,4 @@
-# 每日健康填报自动打卡程序使用指南
+# 电子科技大学研究生每日健康填报自动打卡程序使用指南
 ## 1.首先电脑中要安装python: [python](https://zhuanlan.zhihu.com/p/45608443)
 ## 2.接着要安装pip: [pip教程](https://jingyan.baidu.com/article/7c6fb428d84f9480642c90d1.html)
 pip官网：[pip官网](https://pypi.org/project/pip/#files)
